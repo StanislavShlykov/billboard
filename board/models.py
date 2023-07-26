@@ -26,7 +26,8 @@ class Post(models.Model):
     post_name = models.CharField(max_length=100)
     post_text = models.TextField(default="Тут должен быть идиотский контент, а будет абракадабра, для проверки задания: дурак ываываываф идиот ыафыаываывфа мудак ываф ываф ывп фывп фвап фвп выа фывп фыва выа ыфвп выа фыв афвыа ывф.")
     category = models.ManyToManyField(Category, through='PostCategory')
-
+    file = models.FileField(upload_to='my_downloads', blank=True)
+    
     def preview(self):
         return self.post_text[:20] + '...'
 
