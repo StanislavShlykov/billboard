@@ -181,3 +181,7 @@ CACHES = {
         'LOCATION': os.path.join(BASE_DIR, 'cache_files'),
     }
 }
+
+SOCIALACCOUNT_ADAPTER = 'sign.models.CustomSocialAccountAdapter'
+
+MEDIA_ROOT = BASE_DIR / 'uploads'
