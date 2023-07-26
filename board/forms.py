@@ -11,7 +11,7 @@ class PostForm(forms.ModelForm):
             'post_name',
             'post_text',
             'category',
-            # 'author',
+            'file',
         ]
 
 
